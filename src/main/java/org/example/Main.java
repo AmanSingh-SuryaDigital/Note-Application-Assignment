@@ -44,7 +44,8 @@ public class Main {
 
             switch (option) {
                 case 1:
-                    CreateNote.toCreateNote();
+//                    TODO: add create flow [https://github.com/AmanSingh-SuryaDigital/Note-Application-Assignment/pull/3].
+                    System.out.println("This feature is under development");
                     break;
                 case 2:
                     ReadNote.toReadNote();
