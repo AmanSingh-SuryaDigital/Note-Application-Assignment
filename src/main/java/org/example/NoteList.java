@@ -76,10 +76,10 @@ public class NoteList {
     public static class DateCompare implements Comparator<File> {
 
         @Override
-        public int compare(File f1, File f2) {
+        public int compare(File noteName1, File noteName2) {
             try {
-                FileTime creationTime1 = Files.readAttributes(f1.toPath(), BasicFileAttributes.class).creationTime();
-                FileTime creationTime2 = Files.readAttributes(f2.toPath(), BasicFileAttributes.class).creationTime();
+                FileTime creationTime1 = Files.readAttributes(noteName1.toPath(), BasicFileAttributes.class).creationTime();
+                FileTime creationTime2 = Files.readAttributes(noteName2.toPath(), BasicFileAttributes.class).creationTime();
                 return creationTime2.compareTo(creationTime1);
             } catch (IOException e) {
                 System.err.println("Error comparing notes: " + e.getMessage());
