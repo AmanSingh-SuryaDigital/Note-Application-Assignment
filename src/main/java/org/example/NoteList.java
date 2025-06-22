@@ -22,7 +22,7 @@ public class NoteList {
         File[] files = folder.listFiles();
 
         if (files == null) {
-            System.out.println("No files found in the directory or directory does not exist.");
+            System.out.println("No notes found in the directory or directory does not exist.");
             return null;
         }
 
@@ -53,7 +53,7 @@ public class NoteList {
 
         File[] files = folder.listFiles();
         if (files == null) {
-            System.out.println("No files found in the directory or directory does not exist.");
+            System.out.println("No notes found in the directory or directory does not exist.");
             return;
         }
 
@@ -65,7 +65,7 @@ public class NoteList {
         DateCompare dateCompare = new DateCompare();
         Collections.sort(fileList, dateCompare);
 
-        System.out.println("List of File");
+        System.out.println("List of notes");
         int count = 0;
 
         for (File file : fileList) {
@@ -82,7 +82,7 @@ public class NoteList {
                 FileTime creationTime2 = Files.readAttributes(f2.toPath(), BasicFileAttributes.class).creationTime();
                 return creationTime2.compareTo(creationTime1);
             } catch (IOException e) {
-                System.err.println("Error comparing files: " + e.getMessage());
+                System.err.println("Error comparing notes: " + e.getMessage());
                 return 0;
             }
         }
