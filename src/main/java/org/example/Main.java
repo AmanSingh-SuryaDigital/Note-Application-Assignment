@@ -37,13 +37,16 @@ public class Main {
                     break;
                 case Task.Update:
 //                    TODO: add update flow [https://github.com/AmanSingh-SuryaDigital/Note-Application-Assignment/pull/6].
-                    System.out.println("This feature is under development");
+                    System.out.println("This feature is under development"); 
+                    break;
                 case Task.Delete:
 //                    TODO: add create flow [https://github.com/AmanSingh-SuryaDigital/Note-Application-Assignment/pull/7].
-                    System.out.println("This feature is under development");                    break;
+                    System.out.println("This feature is under development"); 
+                   break;
                 case Task.List:
 //                    TODO: add create flow [https://github.com/AmanSingh-SuryaDigital/Note-Application-Assignment/pull/4].
-                    System.out.println("This feature is under development");                    break;
+                    System.out.println("This feature is under development");   
+                   break;
                 case Task.Exit:
                     System.out.println("Exit from NoteApplication");
                     return;
@@ -51,3 +54,4 @@ public class Main {
         }
     }
 }
+
