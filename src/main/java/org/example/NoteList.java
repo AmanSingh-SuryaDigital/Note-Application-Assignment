@@ -22,7 +22,7 @@ public class NoteList {
         File[] files = folder.listFiles();
 
         if (files == null) {
-            System.out.println("No notes found in the directory or directory does not exist.");
+            System.out.println("No note found in the directory");
             return null;
         }
 
@@ -53,7 +53,7 @@ public class NoteList {
 
         File[] files = folder.listFiles();
         if (files == null) {
-            System.out.println("No notes found in the directory or directory does not exist.");
+            System.out.println("No note found in the directory");
             return;
         }
 
